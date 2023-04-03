@@ -18,7 +18,8 @@ section{
 .formbox{
     position: relative;
     width: 400px;
-    height: 450px;
+    min-height: 450px;
+    max-height: 500px;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
@@ -30,6 +31,7 @@ section{
 h2{
     text-align: center;
     color: aliceblue;
+    margin-top: 15px;
 }
 .inputbox{
     position: relative;
@@ -78,7 +80,11 @@ input:valid ~ label{
     justify-content: center;
     align-items: center;
 }
-.register label{
+.remember a{
+    text-decoration: none;
+    color: white;
+}
+.register , .signin label{
     margin: -15px 0 15px;
     font-size: .9em;
     color: white;
@@ -86,11 +92,13 @@ input:valid ~ label{
     justify-content: center;
     margin-top: 10px;
 }
-.remember a{
+
+.register a{
     text-decoration: none;
     color: white;
+    margin-left: 10px;
 }
-.register a{
+.signin a{
     text-decoration: none;
     color: white;
     margin-left: 10px;
